@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="x-apple-disable-message-reformatting">  
+    <title>New Account Notification</title> 
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+}
+    </style>
+    <style>
+    /* CSS Main : BEGIN */
+.primary{
+	background: #019BDB;
+}
+.bg_white{
+	background: #ffffff;
+}
+.bg_light{
+	background: #fafafa;
+}
+.bg_medium{
+    background: #cfcfcf;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+.email-section{
+	padding: 2em 2em 2em 2em;
+    background-color: #fff;
+}
+/* MAIN BODY TEXT */
+.body-header{
+    color: #019BDB;
+	font-size: 24px;
+    font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+.body-subject{
+    color: #000;
+	font-size: 14px;
+    font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+.body-text{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000;
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+}
+.footer-links{
+    color: #968E90;
+	font-size: 12px;
+    font-weight: 600;
+	font-family: 'Lato', sans-serif;
+}
+/*BUTTON*/
+.btn{
+	padding: 10px 15px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;    
+}
+.btn.btn-primary{
+	border-radius: 6px;
+	background: #019BDB;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;        
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+	font-weight: 700;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.2;
+	color: #000;
+}
+/* LINKS CONTROL */
+a{
+	color: #019BDB;
+    text-decoration: none;
+}
+a:link {
+	color: #019BDB;
+    text-decoration: none;
+}
+a:visited {
+	color: #2467bf;
+    text-decoration: none;
+    background: #98a5e4;
+}
+a:focus {
+	color: #019BDB;
+    text-decoration: none;
+}
+a:hover {
+	color: #005072;
+    text-decoration: none;
+    background: #98a5e4;
+}
+a:active {
+	color: #2467bf;
+    text-decoration: none;
+    background: #98a5e4;
+}
+table{
+    font-family: 'Lato', sans-serif;
+}
+/*LOGO*/
+.logo h1 {
+	color: #019BDB;
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+.logo h2{
+	margin-top: 1em;
+    color: #348BFF;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+.logo h3{
+	margin-top: 1em !important;
+    color: #348BFF;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+.logo h4{
+	margin-top: -20px !important;
+	margin-bottom: 10px !important;
+    color: #968E90;
+	font-size: 16px;
+	font-weight: 400;
+    font-style: italic;
+	font-family: 'Lato', sans-serif;
+}
+/*HEADING SECTION*/
+.heading-section{
+    font-family: 'Lato', sans-serif;
+}
+.heading-section h2{
+	color: #000000;
+	font-size: 28px;
+	margin-top: 0;
+	line-height: 1.4;
+	font-weight: 700;
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #348BFF;
+	margin: 0 auto;
+}
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	font-family: 'Lato', sans-serif;
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+/*HEADING LOGO*/
+.leader::before{
+   content: url('{PORTAL_HEADER_IMAGE_URL}');
+   top: 0;
+   left: 0;
+   width: 400px;
+   max-width: 400px;
+   height: auto;
+}
+/*FOOTER*/
+.footer{
+	border-bottom: 2px;
+    border-top: 0px;
+    border-left:0px;
+    border-right: 0px;
+    border-style: dotted;
+	color: rgba(0,0,0,0.8);
+}
+.footer h3{
+    font-family: 'Lato', sans-serif;
+	color: #292929;
+	font-size: 18px;
+    font-weight: 700;	
+}
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+.footer ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.footer ul li a{
+	color: #292929;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+}
+    /* CSS Main : END */
+    </style>
+</head>
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
+	
+    <div style="font-size: 1px;max-height: 0px;max-width: 0px;overflow: hidden;font-family: sans-serif">
+    </div>
+    <div style="max-width: 600px;margin: 0 auto" class="email-container">
+    	<!-- BEGIN BODY -->
+<!-- BEGIN LOGO and WEBSITE INFO -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto">
+      	<tr>
+          <td valign="top" class="bg_white" style="padding: 40px 0px 0px 0px">
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          		<tr>
+          			<td style="text-align: center">
+                    <img src="{PORTAL_HEADER_IMAGE_URL}" alt="{PORTAL_NAME}" style="width: 400px;max-width: 400px;height: auto;margin: auto"></td>
+          		</tr>
+          	</table>
+          </td>
+	      </tr><!-- end tr -->
+<!-- BEGIN CONTENT -->
+          <tr>
+          <td valign="middle" class="email-section" style="padding: 0px 0px 40px 0px">
+            <table style="width: 100%;padding: 10px 0px 10px 0px">
+            	<tr>
+            		<td>
+            <div class="body-header" style="text-align: center">
+            New Account Notification
+            </div>
+            <div class="body-subject" style="padding: 10px 10px 0px 10px;text-align: left">
+        {EMAIL_SUBJECT}
+            </div>
+            <div class="body-text" style="padding: 0px 20px 10px 20px;text-align: left">
+        Dear {EMAIL_ATTENTION},
+            </div>
+            <div class="body-text" style="padding: 0px 20px 10px 20px;text-align: left">
+        {EMAIL_MESSAGE}
+            </div>
+            <div class="text" style="padding: 20px 0px 0px 0px;text-align: center">
+        <a href="{PORTAL_LOGIN_URL}" class="btn btn-primary">Take Me to the Portal</a>
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+      <!-- 1 Column Text + Button : END -->
+      </table>
+ <!-- BEGIN FOOTER -->
+    <table class="bg_light footer email-section" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto">
+      	<tr>
+          <td valign="middle">
+            <table width="96%" style="margin-left: 6px">
+            	<tr>
+                <td valign="top" width="33.333%">
+                  <table role="note" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left;padding-right: 6px">
+                      	<h3 class="footer">About Us</h3>
+                      	<p>We all stand stronger when we stand together!</p><p>Supporting all small businesses through connections.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-left: 14px">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left;padding-left: 5px;padding-right: 5px">
+                      	<h3 class="footer">Contact Info</h3>
+                      	<ul>
+					   <li><span class="text"><strong>{PORTAL_NAME}</strong></span></li>
+                        <li>Email:<br><span class="text"><a href="mailto:{PORTAL_SUPPORT_EMAIL}">{PORTAL_SUPPORT_EMAIL}</a></span></li>
+                        <li>Phone:<br><span class="text"><a href="tel:{PORTAL_SUPPORT_PHONE}">{PORTAL_SUPPORT_PHONE}</a></span></li>
+					   </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%">
+                  <table role="navigation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left;padding-left: 20px">
+                      	<h3 class="footer">Useful Links</h3>
+        <ul>
+            <li><span class="footer-links"><a href="{PORTAL_CONTACT_URL}">Contact Us</a></span></li>
+            <li><span class="footer-links"><a href="{PORTAL_PRIVACY_URL}">Privacy Policy</a></span></li>
+            <li><span class="footer-links"><a href="{PORTAL_TERMS_URL}">Terms of Use Policy</a></span></li>
+          </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr><!-- end: tr -->
+<!-- BEGIN MESSAGE INFORMATION -->
+        <tr>
+          <td class="bg_light" style="text-align: center">
+              <p>Message Info: <span>{EMAIL_DATE} at {EMAIL_TIME}</span> | Sent From: <span>{PORTAL_SUPPORT_EMAIL}</span></p>
+              <p><strong>Attention: No one from {PORTAL_NAME} will ever ask you for your<br /> password or any other sensitive information.</strong></p>
+              <p>If you no longer wish to receive this email,<br />you can unsubscribe or change your preferences here:<br /><a href="{PORTAL_LOGIN_URL}"><strong>{PORTAL_NAME} Login</strong></a></p>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg_light" style="text-align: center">
+          	<p>You are receiving this email as a client of <a href="{PORTAL_URL}">{PORTAL_NAME}</a>&nbsp;&nbsp;|&nbsp;&nbsp;All rights reserved.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 100" fill="none">
+  <defs>
+    <linearGradient id="cloudShieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="shadowFilter" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#06B6D4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Mark Icon -->
+  <g transform="translate(15, 10)" filter="url(#shadowFilter)">
+    <!-- Outer Shield Hexagon Path -->
+    <path d="M40 5 L68 18 C68 45 54 65 40 75 C26 65 12 45 12 18 Z" 
+          fill="#0F172A" stroke="url(#cloudShieldGrad)" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Stylized Cloud Overlap inside shield -->
+    <path d="M25 46 C25 42 28.5 38 33 38 C34 38 35 38.3 35.8 38.8 C37.2 34.2 41.5 31 46.5 31 C52.8 31 58 36.2 58 42.5 C58 43 57.9 43.6 57.8 44.1 C61.3 45.1 64 48.3 64 52.2 C64 57 60 61 55 61 L26 61 C20.5 61 16 56.5 16 51 C16 46 19.8 42 24.6 41.2" 
+          fill="none" stroke="url(#glowGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+
+    <!-- Central Security Padlock Core -->
+    <rect x="33" y="44" width="14" height="11" rx="2.5" fill="url(#cloudShieldGrad)" />
+    <path d="M36 44 V39.5 C36 37 38 35 40 35 C42 35 44 37 44 39.5 V44" 
+          stroke="url(#cloudShieldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <circle cx="40" cy="49" r="1.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(100, 26)">
+    <!-- "SECURE" -->
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" 
+          font-size="28" font-weight="800" letter-spacing="-0.5" fill="#0EA5E9">
+      SECURE<tspan fill="#3B82F6">CLOUD</tspan>
+    </text>
+    <!-- "PORTAL" with badge style -->
+    <text x="210" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" 
+          font-size="28" font-weight="600" letter-spacing="2" fill="#64748B">
+      PORTAL
+    </text>
+    <!-- Tagline -->
+    <text x="2" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" 
+          font-size="11" font-weight="600" letter-spacing="1.5" fill="#94A3B8">
+      CLIENT SERVICES &#8226; BILLING &#8226; DOMAINS
+    </text>
+  </g>
+</svg>
